@@ -9,6 +9,7 @@ env:
   - DB=sqlite
 
 before_script: 
+  - "psql -c 'create database doctrine_tests;create database doctrine_tests_tmp;' -U postgres"
   - "mysql -e 'create database doctrine_tests_tmp;create database doctrine_tests;'"
   - git submodule update --init
 
