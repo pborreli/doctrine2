@@ -9,4 +9,4 @@ env:
 
 before_script: git submodule update --init
 
-script: phpunit --configuration $DB.phpunit.xml AllTests
+script: phpunit --configuration $DB.phpunit.xml
