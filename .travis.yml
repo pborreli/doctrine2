@@ -6,6 +6,7 @@ php:
 env:
   - DB=mysql
   - DB=pgsql
+  - DB=sqlite
 
 before_script: git submodule update --init
 
